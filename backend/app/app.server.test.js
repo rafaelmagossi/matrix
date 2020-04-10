@@ -4,7 +4,7 @@ const app = require("../app/app.server");
 describe("Unit testing the / route", () => {
   let server;
   beforeEach(() => {
-    server = app.listen();
+    server = app.listen(3001);
   });
   afterEach(() => {
     server.close();
